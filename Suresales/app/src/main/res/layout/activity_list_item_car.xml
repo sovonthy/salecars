@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:id="@+id/collapsedRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCar"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/carName"
+                android:layout_width="215dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="2019 BMW X3 xDrive30i Sport Utility 4D"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stoke"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="12345"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vin"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="123hhh4k5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="Light blur"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mileage"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="12,345"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStoke"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="100dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="Stoke:" />
+            <TextView
+                android:id="@+id/txtVin"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="100dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="VIN:" />
+            <TextView
+                android:id="@+id/txtColor"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="100dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="Color:" />
+            <TextView
+                android:id="@+id/txtMileage"
+                android:layout_width="55dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_toEndOf="@+id/imgCar"
+                android:layout_toRightOf="@+id/imgCar"
+                android:text="Mileage:" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Passed"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/round_border_blue"/>
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="190dp"
+        android:text="Mon, Oct 05,2020 at 4:40 PM PST"
+        android:textStyle="italic" />
+
+</com.google.android.material.card.MaterialCardView>

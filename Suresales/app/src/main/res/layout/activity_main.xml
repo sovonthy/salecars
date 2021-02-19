@@ -4,15 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
+    android:background="#faf8f7">
+    <CheckBox
+        android:id="@+id/rb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:checked="false"
+        android:text="Passed (100)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="All (200)"
+        app:layout_constraintBottom_toBottomOf="@+id/rb3"
+        app:layout_constraintEnd_toStartOf="@+id/rb3"
+        app:layout_constraintTop_toTopOf="@+id/rb3" />
+
+    <CheckBox
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Fail (100)"
+        app:layout_constraintBottom_toBottomOf="@+id/rb3"
+        app:layout_constraintStart_toEndOf="@+id/rb3"
+        app:layout_constraintTop_toTopOf="@+id/rb3" />
+
+    <EditText
+        android:id="@+id/searchForm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:backgroundTint="@color/white"
+        android:hint="Search By Vin, Stock, Color And Make"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="@+id/rb3"
+        app:layout_constraintStart_toStartOf="@+id/rb3"
+        app:layout_constraintTop_toBottomOf="@+id/rb3"></EditText>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/searchHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchForm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
